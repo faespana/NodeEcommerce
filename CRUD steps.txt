@@ -1,0 +1,29 @@
+https://github.com/luismavlo/ECCOMERCE-NODE-G20.git
+19:22
+<------------------------------------------>
+clase 4: PASOS
+1 paso: Vamos a instalar dotenv libreria para manejar variables de entorno: npm i dotenv
+https://www.npmjs.com/package/dotenv
+2 paso: configurar variables de entorno
+3 paso: vamos a instalar las cors: npm i cors
+https://www.npmjs.com/package/cors
+las cors permiten proteger al servidor de una manera superficial puede permitir o denegar acceso a la api
+3 paso: crearemos un metodo middlewares que definiremos antes de las rutas y dentro de ese metodo usaremos el siguiente middlewares
+    this.app.use(express.json()); este middleware le permitira a express trabajar con formatos json
+4 paso: vamos a crear nuestras las otras rutas para los verbos: post put patch delete
+    GET: Verbo http que indica que vamos a obtener un recurso
+    POST: Verbo http que indica que vamos a crear un recurso
+    PUT: Verbo htto que indica que vamos a actualizar todo el recurso
+    PATCH: Verbo http que indica que vamos a actualizar una parte del recurso
+    DELETE: Verbo http que indica que vamos a eliminar un recurso
+5 paso: Vamos a pasar nuestras rutas a un archivo independiente, para ello vamos a crear una carpeta en la raiz que se llame routes,
+ despues de creada esa carpeta dentro crearemos un archivo que se llame product.routes.js en ese archivo pegaremos las rutas y despues
+ haremos las configuraciones
+6 paso: Vamos a pasar la logica de las rutas en otro archivo, para ello crearemos una carpeta en nuestra raiz que se llame controllers
+    alli crearemos el archivo product.controller.js y empezaremos a realizar las respectivas configuraciones
+npmnpm
+dotenv
+Loads environment variables from .env file. Latest version: 16.0.3, last published: 4 months ago. Start using dotenv in your project by running npm i dotenv. There are 32311 other projects in the npm registry using dotenv.
+npmnpm
+cors
+Node.js CORS middleware. Latest version: 2.8.5, last published: 4 years ago. Start using cors in your project by running npm i cors. There are 11741 other projects in the npm registry using cors.
